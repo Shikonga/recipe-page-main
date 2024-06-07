@@ -101,38 +101,18 @@ font-weight: 700;
     margin-left: 30px;
 }
   
-ol {
-    counter-reset: item;
-    list-style-type: none;
-    padding-left: 0;
-}
 
 ol li {
     color: var(--WengeBrown);
-    margin-left: 1.5em;
-    position: relative;
+    line-height: normal;
 }
 
-ol li ::before {
-    content: counter(item) ". ";
-    counter-increment: item;
+ol li::marker {
     color: var(--Nutmeg);
     font-weight: 700;
-    position: absolute;
-    left: -1.5em;
+    
 }
  
-
-ul li {
- color: var(--WengeBrown);
-}
-
-ul li ::before{
-    color: var(--Nutmeg);
-    font-weight: 700;
-    position: absolute;
-}
-
 ul li {
     color: var(--WengeBrown);
 }
