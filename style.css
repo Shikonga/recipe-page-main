@@ -30,6 +30,10 @@ body{
 h1, h2, h3 {
     font-family: "Young Serif", serif;
 }
+h1{
+    color: var(--DarkCharcoal);
+    margin-bottom: 20px;
+}
 h2{
     color: var(--Nutmeg);
     margin-top: 15px;
@@ -81,6 +85,21 @@ img{
 color: var(--WengeBrown);
 font-weight: 700;
 }
+
+.instructions{
+    padding: 10px; 
+    margin-bottom: 20px ;
+    border-top: 2px solid var(--LightGrey);
+}
+
+.ingredients{
+    margin-bottom: 20px;
+    
+}
+
+.ingredients ul li{
+    margin-left: 30px;
+}
   
 ol {
     counter-reset: item;
@@ -120,4 +139,87 @@ ul li {
 
 ul li::marker {
     color: var(--Nutmeg)
+}
+
+.nutritional{
+    border-top: 2px solid var(--LightGrey);
+    padding: 10px; 
+    margin-bottom: -30px
+}
+
+.nutritional h2{
+    margin-top: 0;
+}
+
+.nutritional p {
+    margin-bottom: 10px; 
+}
+  
+.nutritional table {
+    width: 100%; 
+    border-collapse: collapse; 
+  }
+  
+  .nutritional table tr {
+    border-bottom: 1px solid var(--LightGrey);
+}
+
+.nutritional table tr:last-child {
+    border-bottom: none;
+
+}
+
+.nutritional table td {
+    color: var(--Nutmeg);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.nutritional table td:nth-child(2) {
+    
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+
+    .container{
+       margin: 0; 
+    }
+    .wrapper {
+        max-width: fit-content;
+        margin: 20px;
+    padding: 20px;
+    }
+
+    img{
+        width: 400px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .container{
+       margin: 0; 
+    }
+    .wrapper {
+        max-width: fit-content;
+        margin: 20px;
+       padding: 20px;
+    }
+
+    img{
+        width: 300px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
 }
